@@ -16,7 +16,7 @@ test('test', async ({ page }) => {
   await page.getByText('Success: Your account has').click();
   await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]")
   await page.getByRole('link', { name: 'Logout', exact: true }).click();
-//nmp test -- corre los test
+//npm test -- corre los test
 //npx playwright test es lo mismo pero la version que no esta escrita para script
 
 });

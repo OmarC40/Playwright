@@ -71,7 +71,59 @@
       "line": 0,
       "specs": [
         {
-          "title": "Interctions",
+          "title": "Interctions with inputs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\basicinteractions.test.ts",
+                    "line": 3,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-14T23:10:35.600Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\basicinteractions.test.ts",
+                        "line": 3,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "53707f89fa4936475b86-5eb8e81a8e9b36797721",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 3,
+          "column": 6
+        },
+        {
+          "title": "Sum",
           "ok": true,
           "tags": [],
           "tests": [
@@ -86,29 +138,40 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5779,
+                  "duration": 28855,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Please enter your Message\n"
+                      "text": "579\n"
                     },
                     {
-                      "text": "Please enter first value\n"
+                      "text": "locator('#addmessage')\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-13T23:02:01.536Z",
+                  "startTime": "2026-01-14T23:10:35.603Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-basicinteractions-Sum\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-basicinteractions-Sum\\video.webm"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "53707f89fa4936475b86-d99c0f86cf392bde4fe4",
+          "id": "53707f89fa4936475b86-76b6dab8e0a20c0e1ec7",
           "file": "tests/basicinteractions.test.ts",
-          "line": 3,
+          "line": 16,
           "column": 5
         }
       ]
@@ -116,10 +179,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-13T23:01:58.878Z",
-    "duration": 12411.251,
+    "startTime": "2026-01-14T23:10:32.970Z",
+    "duration": 34530.007999999994,
     "expected": 1,
-    "skipped": 0,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }
