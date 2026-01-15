@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
+    "configFile": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -18,7 +18,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "never"
         }
       ],
       [
@@ -39,7 +39,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright/test-results",
+        "outputDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -47,10 +47,10 @@
         },
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
+        "testDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/alerts.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -58,20 +58,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.57.0",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\alerts.test.ts",
-      "file": "tests/alerts.test.ts",
+      "title": "tests\\frames.test.ts",
+      "file": "tests/frames.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Alert",
+          "title": "Frames",
           "ok": true,
           "tags": [],
           "tests": [
@@ -86,23 +86,27 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2538,
+                  "duration": 10646,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "No of frames 20\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-15T06:57:26.252Z",
+                  "startTime": "2026-01-15T22:58:47.818Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-alerts-Alert\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-frames-Frames\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-alerts-Alert\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-frames-Frames\\video.webm"
                     }
                   ]
                 }
@@ -110,118 +114,9 @@
               "status": "expected"
             }
           ],
-          "id": "addb81fc64a6c6200bbb-c19c618954716b70265a",
-          "file": "tests/alerts.test.ts",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "handling alerts",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 1624,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('id=confirm-demo')\nExpected substring: \u001b[32m\"Cancel!\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=confirm-demo')\u001b[22m\n\u001b[2m    3 × locator resolved to <p class=\"mt-20\" id=\"confirm-demo\"></p>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('id=confirm-demo')\nExpected substring: \u001b[32m\"Cancel!\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=confirm-demo')\u001b[22m\n\u001b[2m    3 × locator resolved to <p class=\"mt-20\" id=\"confirm-demo\"></p>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\tests\\alerts.test.ts:27:45",
-                    "location": {
-                      "file": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\tests\\alerts.test.ts",
-                      "column": 45,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m     })\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"button:has-text('Click Me')\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"id=confirm-demo\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Cancel!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[90m//expect(page.locator(\"id=prompt-demo\")).toContainText(\"'koushik'\");\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\tests\\alerts.test.ts",
-                        "column": 45,
-                        "line": 27
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('id=confirm-demo')\nExpected substring: \u001b[32m\"Cancel!\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('id=confirm-demo')\u001b[22m\n\u001b[2m    3 × locator resolved to <p class=\"mt-20\" id=\"confirm-demo\"></p>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     })\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"button:has-text('Click Me')\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"id=confirm-demo\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Cancel!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[90m//expect(page.locator(\"id=prompt-demo\")).toContainText(\"'koushik'\");\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\tests\\alerts.test.ts:27:45\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-15T06:57:29.060Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-alerts-handling-alerts\\test-finished-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\tests\\alerts.test.ts",
-                    "column": 45,
-                    "line": 27
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "addb81fc64a6c6200bbb-5a0babe36829e55e67b9",
-          "file": "tests/alerts.test.ts",
-          "line": 17,
-          "column": 5
-        },
-        {
-          "title": "Modal alert",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1671,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-15T06:57:31.557Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-alerts-Modal-alert\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-alerts-Modal-alert\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "addb81fc64a6c6200bbb-81bc4199db008e57e6b8",
-          "file": "tests/alerts.test.ts",
-          "line": 31,
+          "id": "ee77907c2abffffa1fe6-399ba1c9cdcaaaf97133",
+          "file": "tests/frames.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
@@ -229,11 +124,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-15T06:57:25.460Z",
-    "duration": 8148.884999999999,
-    "expected": 2,
+    "startTime": "2026-01-15T22:58:40.287Z",
+    "duration": 25475.229,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

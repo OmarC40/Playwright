@@ -1,33 +1,44 @@
 import { test, expect } from '@playwright/test';
-import { text } from 'stream/consumers';
 
 test("Alert",async ({page})=>{
-    await page.goto("https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo");
+    await page.goto("https://testpages.herokuapp.com/pages/basics/alerts-javascript/");
     
     
     page.on("dialog", async (alert) => {
         const text = alert.message();
-        console.log(text) ;;
+        console.log(text) ;  
         await alert.accept();
-
-await page.locator("button:has-text('Click Me')").nth(0).click();
 })
+await page.locator("//button[@id='alertexamples']").click();
 })
 
-test("handling alerts", async ({ page }) => {
+test("Alert message",async ({page})=>{
+    await page.goto("https://testpages.herokuapp.com/pages/basics/alerts-javascript/");
+    
+    
+    page.on("dialog", async (alert) => {
+        const text = alert.message();
+        console.log(text) ;  
+        await alert.dismiss();
+})
+    await page.locator("//button[@id='confirmexample']").click();
+    expect(page.locator("//p[@id='confirmreturn']")).toContainText("false")
+})
 
-    await page.goto("https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo");
-
+test("Alert Input",async ({page})=>{
+    await page.goto("https://testpages.herokuapp.com/pages/basics/alerts-javascript/");
+    
+    
     page.on("dialog", async (alert) => {
         const text = alert.defaultValue();
-        console.log(text);;
-        await alert.accept("koushik");
-    })
-    await page.locator("button:has-text('Click Me')").nth(2).click();
-    expect(page.locator("id=confirm-demo")).toContainText("Cancel!")
-    //expect(page.locator("id=prompt-demo")).toContainText("'koushik'");
-
+        console.log(text) ;  
+        await alert.accept("Omar");
 })
+    await page.locator("//button[@id='confirmexample']").click();
+    expect(page.locator("//p[@id='promptreturn']")).toContainText("Omar")
+})
+
+
 test("Modal alert", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-modal-demo")
     await page.click("//button[@data-target='#myModal']")
