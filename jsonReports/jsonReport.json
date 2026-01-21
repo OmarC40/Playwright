@@ -58,7 +58,7 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.57.0",
     "workers": 6,
     "webServer": null
@@ -86,16 +86,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9601,
+                  "duration": 9916,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "C:\\Users\\OCUARE~1\\AppData\\Local\\Temp\\playwright-artifacts-IsdIiy\\f460a6c7-f73b-4343-a041-de98a93f0df7\n"
+                      "text": "C:\\Users\\OCUARE~1\\AppData\\Local\\Temp\\playwright-artifacts-64OcMf\\9699c721-7633-47f0-b4d6-1a7014957a4d\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-21T22:34:14.696Z",
+                  "startTime": "2026-01-21T22:48:14.865Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -124,8 +124,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-21T22:34:12.353Z",
-    "duration": 16111.742999999999,
+    "startTime": "2026-01-21T22:48:06.822Z",
+    "duration": 22094.413999999873,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
