@@ -19,7 +19,7 @@ test("Frames",async ({page})=>{
 
     await frame.locator("input[name='fname']").fill("letcode");
 
-    /* Esto es muy inetresante yua que previamente con cypress que es una herramienta que ultilizaba no se podia usar los iframes pero en este caso vemos que
+    /* Esto es muy inetresante ya que previamente con cypress que es una herramienta que ultilizaba no se podia usar los iframes pero en este caso vemos que
     lo manejan de una forma mucho mas sencilla y en este caso es posible hasta en el contexto de etrar a iframes que estan adentro de otros  */
 
     // const myFrame = page.frame("firstFr")

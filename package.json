@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"npx playwright test"
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,8 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.7"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
   }
 }

@@ -2,7 +2,7 @@ import { PlaywrightTestConfig } from '@playwright/test';
 
 
 const config: PlaywrightTestConfig={
-  testMatch:["tests/windows.test.ts"],
+  testMatch:["tests/calendar.test.ts"],
   use:{
     headless: false,
     screenshot:"on",
