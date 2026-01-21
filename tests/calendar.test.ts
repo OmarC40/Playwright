@@ -42,18 +42,18 @@ test("Calendar Pick", async ({ page }) => {
 })
 
 test.only("Calendar demo using moment", async ({ page }) => {
+    test.setTimeout(120_000);
     //https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925
-    await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");
-
-    await selectDate(12, "December 2017");
-
-    await page.reload();
-
-    await selectDate(5, "December 2023");
+    await page.goto("https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925");
+    await selectDate(12, "December 2026");
 
     await page.reload();
 
-    await selectDate(2, "July 2022");
+    await selectDate(5, "March 2026");
+
+    await page.reload();
+
+    await selectDate(15, "September 2026");
 
 
     await page.waitForTimeout(3000)
@@ -61,15 +61,20 @@ test.only("Calendar demo using moment", async ({ page }) => {
 
 
     async function selectDate(date: number, dateToSelect: string) {
-        await page.click("//input[@placeholder='Start date']")
+        
+        const frame = page.frameLocator('[title="badge"]');
 
-        const mmYY = page.locator("(//table[@class='table-condensed']//th[@class='datepicker-switch'])[1]");
-        const prev = page.locator("(//table[@class='table-condensed']//th[@class='prev'])[1]");
-        const next = page.locator("(//table[@class='table-condensed']//th[@class='next'])[1]");
+        await frame.getByLabel('Start Date').click();
+
+        const mmYY = frame.locator("div.datepicker-days th.datepicker-switch");
+        const prev = frame.locator("div.datepicker-days th.prev");
+        const next = frame.locator("div.datepicker-days th.next");
+
 
         // let dateToSelect: string = "May 2019";
         const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore(); // regresa un valor booleano
         console.log("this month? " + thisMonth);
+        console.log(mmYY.textContent());
         while (await mmYY.textContent() != dateToSelect) {
             if (thisMonth) {
                 await prev.click();
@@ -77,6 +82,7 @@ test.only("Calendar demo using moment", async ({ page }) => {
                 await next.click();
             }
         }
-        await page.click(`//td[@class='day'][text()='${date}']`);
+        await page.frameLocator('[title="badge"]').locator(`td.day:text-is("${date}")`).click();
+
     }
 })

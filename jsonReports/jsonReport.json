@@ -50,7 +50,7 @@
         "testDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/calendar.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       }
@@ -65,14 +65,14 @@
   },
   "suites": [
     {
-      "title": "tests\\calendar.test.ts",
-      "file": "tests/calendar.test.ts",
+      "title": "tests\\uploadDownload.test.ts",
+      "file": "tests/uploadDownload.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Calendar demo using moment",
-          "ok": false,
+          "title": "Download",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -85,71 +85,50 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31551,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
-                        "column": 27,
-                        "line": 73
-                      },
-                      "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//table[@class=\\'table-condensed\\']//th[@class=\\'datepicker-switch\\'])[1]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 71 |\u001b[39m         \u001b[36mconst\u001b[39m thisMonth \u001b[33m=\u001b[39m moment(dateToSelect\u001b[33m,\u001b[39m \u001b[32m\"MMMM YYYY\"\u001b[39m)\u001b[33m.\u001b[39misBefore()\u001b[33m;\u001b[39m \u001b[90m// regresa un valor booleano\u001b[39m\n \u001b[90m 72 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"this month? \"\u001b[39m \u001b[33m+\u001b[39m thisMonth)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m         \u001b[36mwhile\u001b[39m (\u001b[36mawait\u001b[39m mmYY\u001b[33m.\u001b[39mtextContent() \u001b[33m!=\u001b[39m dateToSelect) {\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m             \u001b[36mif\u001b[39m (thisMonth) {\n \u001b[90m 75 |\u001b[39m                 \u001b[36mawait\u001b[39m prev\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m             } \u001b[36melse\u001b[39m {\u001b[0m\n\u001b[2m    at selectDate (C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts:73:27)\u001b[22m\n\u001b[2m    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts:48:5\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 9601,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "this month? true\n"
+                      "text": "C:\\Users\\OCUARE~1\\AppData\\Local\\Temp\\playwright-artifacts-IsdIiy\\f460a6c7-f73b-4343-a041-de98a93f0df7\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-20T22:39:48.825Z",
+                  "startTime": "2026-01-21T22:34:14.696Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-calendar-Calendar-demo-using-moment\\test-failed-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Download\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-calendar-Calendar-demo-using-moment\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-calendar-Calendar-demo-using-moment\\error-context.md"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Download\\video.webm"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "68c95afee124c9066c67-4ee2bebd604e4828af2b",
-          "file": "tests/calendar.test.ts",
-          "line": 44,
-          "column": 6
+          "id": "bff505410ff9353f2355-4259cac9db3d6bde8b70",
+          "file": "tests/uploadDownload.test.ts",
+          "line": 4,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-20T22:39:45.484Z",
-    "duration": 40844.755000000005,
-    "expected": 0,
+    "startTime": "2026-01-21T22:34:12.353Z",
+    "duration": 16111.742999999999,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
