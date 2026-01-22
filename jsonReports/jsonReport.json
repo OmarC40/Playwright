@@ -58,7 +58,7 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
     "workers": 6,
     "webServer": null
@@ -71,7 +71,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Download",
+          "title": "Upload",
           "ok": true,
           "tags": [],
           "tests": [
@@ -86,27 +86,27 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9916,
+                  "duration": 12400,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "C:\\Users\\OCUARE~1\\AppData\\Local\\Temp\\playwright-artifacts-64OcMf\\9699c721-7633-47f0-b4d6-1a7014957a4d\n"
+                      "text": "\u001b[33mtrue\u001b[39m\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-21T22:48:14.865Z",
+                  "startTime": "2026-01-22T21:31:35.928Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Download\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Upload\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Download\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Upload\\video.webm"
                     }
                   ]
                 }
@@ -114,18 +114,18 @@
               "status": "expected"
             }
           ],
-          "id": "bff505410ff9353f2355-4259cac9db3d6bde8b70",
+          "id": "bff505410ff9353f2355-229cb854a40e325bbe4a",
           "file": "tests/uploadDownload.test.ts",
-          "line": 4,
-          "column": 5
+          "line": 20,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-21T22:48:06.822Z",
-    "duration": 22094.413999999873,
+    "startTime": "2026-01-22T21:31:32.433Z",
+    "duration": 21138.938,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

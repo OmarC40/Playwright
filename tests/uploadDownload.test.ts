@@ -16,3 +16,21 @@ test("Download", async ({ page }) => {
     console.log(path);
 
 })
+
+test.only("Upload", async ({ page }) => {
+    await page.goto("https://blueimp.github.io/jQuery-File-Upload/")
+    //await page.setInputFiles("input[type='file']",["images/test.jpg","images/Multimedia (6).jpg"])
+
+     const [uploadFiles] = await Promise.all([
+        page.waitForEvent("filechooser"),
+        page.click("input[type='file']")
+    ])
+    const isMultiple = uploadFiles.isMultiple();
+    console.log(isMultiple);
+    uploadFiles.setFiles(["images/test.jpg","images/Multimedia (6).jpg"])
+
+
+    await page.waitForTimeout(5000);
+    
+
+})
