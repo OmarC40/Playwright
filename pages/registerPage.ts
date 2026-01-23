@@ -16,4 +16,22 @@ export default class RegisterPage{
     async entertTelephone(telephone : string){
         await this.page.locator("#input-telephone").type(telephone)
     }
+    async entertPassword(password : string){
+        await this.page.locator("#input-password").type(password)
+    }
+    async entertConfirmPassword(confirmpassword : string){
+        await this.page.locator("#input-confirm").type(confirmpassword)
+    }
+
+    async isSubcribeCheck(){
+        return await this.page.locator("#input-confirm").isChecked()
+    }
+
+    async clickTermsCondition(){
+        return await this.page.click("label[for='input-agree']")
+    }
+
+    async clickContinueRegister(){
+        return await this.page.click("input[value='Continue']']")
+    }
 }

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -43,14 +43,14 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "",
         "name": "",
         "testDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/uploadDownload.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -64,6 +64,138 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "tests\\calendar.test.ts",
+      "file": "tests/calendar.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Calendar demo using moment",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 94622,
+                  "error": {
+                    "message": "Error: page.reload: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925\"\u001b[22m\n",
+                    "stack": "Error: page.reload: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925\"\u001b[22m\n\n    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts:50:16",
+                    "location": {
+                      "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
+                      "column": 16,
+                      "line": 50
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m12\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"December 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m5\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"March 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
+                        "column": 16,
+                        "line": 50
+                      },
+                      "message": "Error: page.reload: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m12\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"December 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m5\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"March 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts:50:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "this month? false\n"
+                    },
+                    {
+                      "text": "Promise {\n  \u001b[36m<pending>\u001b[39m,\n  [\u001b[32mSymbol(async_id_symbol)\u001b[39m]: \u001b[33m52856\u001b[39m,\n  [\u001b[32mSymbol(trigger_async_id_symbol)\u001b[39m]: \u001b[33m48819\u001b[39m,\n  [\u001b[32mSymbol(kResourceStore)\u001b[39m]: \u001b[90mundefined\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-23T15:00:20.052Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-calendar-Calendar-demo-using-moment\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
+                    "column": 16,
+                    "line": 50
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "68c95afee124c9066c67-4ee2bebd604e4828af2b",
+          "file": "tests/calendar.test.ts",
+          "line": 44,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "tests\\dropdowns.test.ts",
+      "file": "tests/dropdowns.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Bootstrap dropdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 23560,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-23T15:00:20.000Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-dropdowns-Bootstrap-dropdown\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-dropdowns-Bootstrap-dropdown\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9086b8cb9d4947d1b36-c51cb5992db89ff53767",
+          "file": "tests/dropdowns.test.ts",
+          "line": 26,
+          "column": 6
+        }
+      ]
+    },
     {
       "title": "tests\\uploadDownload.test.ts",
       "file": "tests/uploadDownload.test.ts",
@@ -83,10 +215,10 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 12400,
+                  "duration": 15889,
                   "errors": [],
                   "stdout": [
                     {
@@ -95,7 +227,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-22T21:31:35.928Z",
+                  "startTime": "2026-01-23T15:00:21.139Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -124,11 +256,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-22T21:31:32.433Z",
-    "duration": 21138.938,
-    "expected": 1,
+    "startTime": "2026-01-23T15:00:15.866Z",
+    "duration": 105093.5,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
