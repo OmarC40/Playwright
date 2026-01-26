@@ -7,31 +7,34 @@ export default class RegisterPage{
     async enterFirstName(firstname : string){
         await this.page.locator("#input-firstname").type(firstname)
     }
-    async enterLasttName(lastname : string){
+    async enterLastName(lastname : string){
         await this.page.locator("#input-lastname").type(lastname)
     }
-    async entertEmail(email : string){
+    async enterEmail(email : string){
         await this.page.locator("#input-email").type(email)
     }
-    async entertTelephone(telephone : string){
+    async enterTelephone(telephone : string){
         await this.page.locator("#input-telephone").type(telephone)
     }
-    async entertPassword(password : string){
+    async enterPassword(password : string){
         await this.page.locator("#input-password").type(password)
     }
-    async entertConfirmPassword(confirmpassword : string){
+    async enterConfirmPassword(confirmpassword : string){
         await this.page.locator("#input-confirm").type(confirmpassword)
     }
 
-    async isSubcribeCheck(){
-        return await this.page.locator("#input-confirm").isChecked()
+    isSubcribeCheck(){
+        return this.page.locator("#input-confirm")
     }
 
     async clickTermsCondition(){
         return await this.page.click("label[for='input-agree']")
     }
 
-    async clickContinueRegister(){
-        return await this.page.click("input[value='Continue']']")
+    async clickContinueRegister() { 
+        await Promise.all([
+            this.page.waitForNavigation({waitUntil:"networkidle"}),
+            this.page.click("input[value='Continue']")
+        ])
     }
 }

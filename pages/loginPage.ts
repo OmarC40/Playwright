@@ -10,19 +10,15 @@ export default class LoginPage {
     }
 
     async enterEmail(emailaddress: string) {
-        await this.page.locator("input[name='email']")
-            .type(emailaddress);
+        await this.page.locator("input[name='email']").type(emailaddress);
     }
 
     async enterLoginPassword(password: string) {
-        await this.page.locator("input[name='password']")
-            .type(password);
+        await this.page.locator("input[name='password']").type(password);
     }
 
     async clickLoginBtn() {
-        await Promise.all([
-            this.page.waitForNavigation(),
-            this.page.click("input[value='Login']")
+        await Promise.all([this.page.waitForNavigation(),this.page.click("input[value='Login']")
         ])
     }
 } 
