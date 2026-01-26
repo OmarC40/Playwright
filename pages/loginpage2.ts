@@ -27,7 +27,7 @@ export class LoginPage {
     await this.loginButton.click();
   }
 
-  // 🔹 Acción compuesta (nivel alto)
+  //Acción compuesta
   async login(email: string, password: string) {
     await this.enterEmail(email);
     await this.enterPassword(password);

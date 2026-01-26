@@ -9,8 +9,8 @@ const myFixtureTest = myTest.extend<{
     age: number,
     email: string
 }>({
-    age: 27,
-    email:"koushik350@gmail.com"
+    age: 26,
+    email:"omar40@gmail.com"
 })
 
 export const test = myFixtureTest;
