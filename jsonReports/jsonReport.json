@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -43,7 +43,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 1
         },
         "id": "",
         "name": "",
@@ -58,209 +58,86 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.57.0",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\calendar.test.ts",
-      "file": "tests/calendar.test.ts",
+      "title": "PreserveAuthenticate\\httpauth.test.ts",
+      "file": "PreserveAuthenticate/httpauth.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Calendar demo using moment",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Login auth",
+          "file": "PreserveAuthenticate/httpauth.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
+              "title": "Http Authentication",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 94622,
-                  "error": {
-                    "message": "Error: page.reload: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925\"\u001b[22m\n",
-                    "stack": "Error: page.reload: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925\"\u001b[22m\n\n    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts:50:16",
-                    "location": {
-                      "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
-                      "column": 16,
-                      "line": 50
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m12\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"December 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m5\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"March 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
-                        "column": 16,
-                        "line": 50
-                      },
-                      "message": "Error: page.reload: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"https://bbbootstrap.com/snippets/blue-themed-date-picker-date-range-and-week-number-61366925\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m12\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"December 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mawait\u001b[39m selectDate(\u001b[35m5\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"March 2026\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts:50:16\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "this month? false\n"
-                    },
-                    {
-                      "text": "Promise {\n  \u001b[36m<pending>\u001b[39m,\n  [\u001b[32mSymbol(async_id_symbol)\u001b[39m]: \u001b[33m52856\u001b[39m,\n  [\u001b[32mSymbol(trigger_async_id_symbol)\u001b[39m]: \u001b[33m48819\u001b[39m,\n  [\u001b[32mSymbol(kResourceStore)\u001b[39m]: \u001b[90mundefined\u001b[39m\n}\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-23T15:00:20.052Z",
+                  "timeout": 30000,
                   "annotations": [],
-                  "attachments": [
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-calendar-Calendar-demo-using-moment\\video.webm"
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4419,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Basic Auth\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T23:13:31.850Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\PreserveAuthenticate-httpauth-Login-auth-Http-Authentication\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\calendar.test.ts",
-                    "column": 16,
-                    "line": 50
-                  }
+                  "status": "expected"
                 }
               ],
-              "status": "unexpected"
+              "id": "522adefc838c2e420bc8-6b4475a677942d86f9e4",
+              "file": "PreserveAuthenticate/httpauth.test.ts",
+              "line": 5,
+              "column": 9
             }
-          ],
-          "id": "68c95afee124c9066c67-4ee2bebd604e4828af2b",
-          "file": "tests/calendar.test.ts",
-          "line": 44,
-          "column": 6
-        }
-      ]
-    },
-    {
-      "title": "tests\\dropdowns.test.ts",
-      "file": "tests/dropdowns.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Bootstrap dropdown",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 23560,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-23T15:00:20.000Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-dropdowns-Bootstrap-dropdown\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-dropdowns-Bootstrap-dropdown\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "e9086b8cb9d4947d1b36-c51cb5992db89ff53767",
-          "file": "tests/dropdowns.test.ts",
-          "line": 26,
-          "column": 6
-        }
-      ]
-    },
-    {
-      "title": "tests\\uploadDownload.test.ts",
-      "file": "tests/uploadDownload.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Upload",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 15889,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-23T15:00:21.139Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Upload\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-uploadDownload-Upload\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "bff505410ff9353f2355-229cb854a40e325bbe4a",
-          "file": "tests/uploadDownload.test.ts",
-          "line": 20,
-          "column": 6
+          ]
         }
       ]
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "message": "Error: Object with guid response@afc50caa9d672c69a8bd2ad81424cca4 was not bound in the connection\n\n\u001b[31mFailed worker ran 1 test:\u001b[39m\nPreserveAuthenticate\\httpauth.test.ts:5:9 › Login auth › Http Authentication",
+      "stack": "Error: Object with guid response@afc50caa9d672c69a8bd2ad81424cca4 was not bound in the connection\n\n\u001b[31mFailed worker ran 1 test:\u001b[39m\nPreserveAuthenticate\\httpauth.test.ts:5:9 › Login auth › Http Authentication"
+    }
+  ],
   "stats": {
-    "startTime": "2026-01-23T15:00:15.866Z",
-    "duration": 105093.5,
-    "expected": 2,
+    "startTime": "2026-01-27T23:13:26.754Z",
+    "duration": 16462.527000000235,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
