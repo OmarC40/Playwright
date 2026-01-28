@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
+    "configFile": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,7 +39,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright/test-results",
+        "outputDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -47,7 +47,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
+        "testDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -65,76 +65,67 @@
   },
   "suites": [
     {
-      "title": "PreserveAuthenticate\\httpauth.test.ts",
-      "file": "PreserveAuthenticate/httpauth.test.ts",
+      "title": "Apiresponse\\apiresponse.test.ts",
+      "file": "Apiresponse/apiresponse.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Login auth",
-          "file": "PreserveAuthenticate/httpauth.test.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
+          "title": "Read API response",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Http Authentication",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14087,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4419,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Basic Auth\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-27T23:13:31.850Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\PreserveAuthenticate-httpauth-Login-auth-Http-Authentication\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 4f 6d 61 72 43 34 30 22 2c 0a 20 20 22 69 64 22 3a 20 35 30 30 30 31 35 39 33 2c 0a 20 20 22 6e 6f 64 65 5f ... 1267 more bytes>\n"
                     }
                   ],
-                  "status": "expected"
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-28T06:30:01.974Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\video.webm"
+                    }
+                  ]
                 }
               ],
-              "id": "522adefc838c2e420bc8-6b4475a677942d86f9e4",
-              "file": "PreserveAuthenticate/httpauth.test.ts",
-              "line": 5,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "c189cee76da494ef2ae4-a02f4b8d9706899d6cb6",
+          "file": "Apiresponse/apiresponse.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
-  "errors": [
-    {
-      "message": "Error: Object with guid response@afc50caa9d672c69a8bd2ad81424cca4 was not bound in the connection\n\n\u001b[31mFailed worker ran 1 test:\u001b[39m\nPreserveAuthenticate\\httpauth.test.ts:5:9 › Login auth › Http Authentication",
-      "stack": "Error: Object with guid response@afc50caa9d672c69a8bd2ad81424cca4 was not bound in the connection\n\n\u001b[31mFailed worker ran 1 test:\u001b[39m\nPreserveAuthenticate\\httpauth.test.ts:5:9 › Login auth › Http Authentication"
-    }
-  ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-01-27T23:13:26.754Z",
-    "duration": 16462.527000000235,
+    "startTime": "2026-01-28T06:29:59.906Z",
+    "duration": 16880.254000000656,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
