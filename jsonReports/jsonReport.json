@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
+    "configFile": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,7 +39,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright/test-results",
+        "outputDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -47,7 +47,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
+        "testDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -65,14 +65,14 @@
   },
   "suites": [
     {
-      "title": "Apiresponse\\apiresponse.test.ts",
-      "file": "Apiresponse/apiresponse.test.ts",
+      "title": "Apiresponse\\mockapi-response.test.ts",
+      "file": "Apiresponse/mockapi-response.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Read API response",
-          "ok": true,
+          "title": "Mock API Response",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -83,40 +83,65 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 9,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14087,
-                  "errors": [],
-                  "stdout": [
+                  "status": "failed",
+                  "duration": 7868,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/books/home\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4200/books/home\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/books/home\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4200/books/home\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\Apiresponse\\mockapi-response.test.ts:11:16",
+                    "location": {
+                      "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\Apiresponse\\mockapi-response.test.ts",
+                      "column": 16,
+                      "line": 11
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m         })\n \u001b[90m 10 |\u001b[39m     })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"http://localhost:4200/books/home\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m titles \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".title.is-4\"\u001b[39m)\n \u001b[90m 13 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m titles\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     expect(count)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 4f 6d 61 72 43 34 30 22 2c 0a 20 20 22 69 64 22 3a 20 35 30 30 30 31 35 39 33 2c 0a 20 20 22 6e 6f 64 65 5f ... 1267 more bytes>\n"
+                      "location": {
+                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\Apiresponse\\mockapi-response.test.ts",
+                        "column": 16,
+                        "line": 11
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/books/home\nCall log:\n\u001b[2m  - navigating to \"http://localhost:4200/books/home\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  9 |\u001b[39m         })\n \u001b[90m 10 |\u001b[39m     })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"http://localhost:4200/books/home\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m titles \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".title.is-4\"\u001b[39m)\n \u001b[90m 13 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m titles\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     expect(count)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\Apiresponse\\mockapi-response.test.ts:11:16\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T06:30:01.974Z",
+                  "startTime": "2026-01-28T21:55:54.199Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\Apiresponse-mockapi-response-Mock-API-Response\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\Apiresponse-mockapi-response-Mock-API-Response\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\Apiresponse-mockapi-response-Mock-API-Response\\error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\Apiresponse\\mockapi-response.test.ts",
+                    "column": 16,
+                    "line": 11
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "c189cee76da494ef2ae4-a02f4b8d9706899d6cb6",
-          "file": "Apiresponse/apiresponse.test.ts",
-          "line": 3,
+          "id": "f8bf3889e226195adc6d-c72302787e763c55387e",
+          "file": "Apiresponse/mockapi-response.test.ts",
+          "line": 2,
           "column": 5
         }
       ]
@@ -124,11 +149,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T06:29:59.906Z",
-    "duration": 16880.254000000656,
-    "expected": 1,
+    "startTime": "2026-01-28T21:55:43.275Z",
+    "duration": 27264.957000002265,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

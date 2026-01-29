@@ -1,4 +1,5 @@
 import { test } from "@playwright/test";
+import { url } from "node:inspector";
 
 test("Read API response", async ({ page }) => {
     await page.goto("https://letcode.in/elements");
@@ -13,6 +14,7 @@ test("Read API response", async ({ page }) => {
             &&
             res.body().then(b => {
                 console.log(b);
+                console.log(res.url()+res.status())
                 return b.includes("OmarCuarenta")
             })
         ),
