@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
+    "configFile": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,7 +39,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright/test-results",
+        "outputDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -47,7 +47,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
+        "testDir": "C:/Users/ocuarenta/Desktop/PlaywrightGit/Playwright",
         "testIgnore": [],
         "testMatch": [
           "tests/Demo.test.ts"
@@ -65,13 +65,13 @@
   },
   "suites": [
     {
-      "title": "tests\\Demo.test.ts",
-      "file": "tests/Demo.test.ts",
+      "title": "Apiresponse\\apiresponse.test.ts",
+      "file": "Apiresponse/apiresponse.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interctions with inputs",
+          "title": "Read API response",
           "ok": true,
           "tags": [],
           "tests": [
@@ -83,50 +83,40 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5882,
+                  "duration": 14087,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Please enter your Message\n"
-                    },
-                    {
-                      "text": "Before entering data \n"
-                    },
-                    {
-                      "text": "After entering data Hi Omar\n"
+                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 4f 6d 61 72 43 34 30 22 2c 0a 20 20 22 69 64 22 3a 20 35 30 30 30 31 35 39 33 2c 0a 20 20 22 6e 6f 64 65 5f ... 1267 more bytes>\n"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:13:47.319Z",
+                  "startTime": "2026-01-28T06:30:01.974Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\test-finished-1.png"
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\trace.zip"
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\video.webm"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "e776a7fc52a70022bea4-22db5a5984aed53800de",
-          "file": "tests/Demo.test.ts",
+          "id": "c189cee76da494ef2ae4-a02f4b8d9706899d6cb6",
+          "file": "Apiresponse/apiresponse.test.ts",
           "line": 3,
           "column": 5
         },
@@ -462,11 +452,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-30T08:13:45.851Z",
-    "duration": 62165.67799999999,
-    "expected": 7,
+    "startTime": "2026-01-28T06:29:59.906Z",
+    "duration": 16880.254000000656,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
