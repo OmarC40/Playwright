@@ -65,63 +65,13 @@
   },
   "suites": [
     {
-      "title": "Apiresponse\\apiresponse.test.ts",
-      "file": "Apiresponse/apiresponse.test.ts",
+      "title": "tests\\Demo.test.ts",
+      "file": "tests/Demo.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Read API response",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14087,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 4f 6d 61 72 43 34 30 22 2c 0a 20 20 22 69 64 22 3a 20 35 30 30 30 31 35 39 33 2c 0a 20 20 22 6e 6f 64 65 5f ... 1267 more bytes>\n"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T06:30:01.974Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "c189cee76da494ef2ae4-a02f4b8d9706899d6cb6",
-          "file": "Apiresponse/apiresponse.test.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Sum",
+          "title": "Interctions with inputs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -136,37 +86,122 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6369,
+                  "duration": 17615,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "579\n"
+                      "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering data \n"
+                    },
+                    {
+                      "text": "After entering data Hi Omar\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:13:53.665Z",
+                  "startTime": "2026-01-30T15:13:57.395Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Sum\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Sum\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Sum\\trace.zip"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\trace.zip"
                     }
                   ]
                 }
               ],
               "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-22db5a5984aed53800de",
+          "file": "tests/Demo.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Sum",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15555,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#sum1')\nExpected: \u001b[32m\"123\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#sum1')\u001b[22m\n\u001b[2m    8 × locator resolved to <input id=\"sum1\" type=\"text\" placeholder=\"Please enter first value\" class=\"border border-gray-550 w-full h-35 rounded px-10\"/>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#sum1')\nExpected: \u001b[32m\"123\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#sum1')\u001b[22m\n\u001b[2m    8 × locator resolved to <input id=\"sum1\" type=\"text\" placeholder=\"Please enter first value\" class=\"border border-gray-550 w-full h-35 rounded px-10\"/>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts:30:27",
+                    "location": {
+                      "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts",
+                      "column": 27,
+                      "line": 30
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m sumInput1\u001b[33m.\u001b[39mtype(\u001b[33mString\u001b[39m(num1))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m   \u001b[36mawait\u001b[39m expect(sumInput1)\u001b[33m.\u001b[39mtoHaveValue(\u001b[33mString\u001b[39m(num1))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   \u001b[36mawait\u001b[39m sumInput2\u001b[33m.\u001b[39mtype(\u001b[33mString\u001b[39m(num2))\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36mawait\u001b[39m expect(sumInput2)\u001b[33m.\u001b[39mtoHaveValue(\u001b[33mString\u001b[39m(num2))\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts",
+                        "column": 27,
+                        "line": 30
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#sum1')\nExpected: \u001b[32m\"123\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#sum1')\u001b[22m\n\u001b[2m    8 × locator resolved to <input id=\"sum1\" type=\"text\" placeholder=\"Please enter first value\" class=\"border border-gray-550 w-full h-35 rounded px-10\"/>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m sumInput1\u001b[33m.\u001b[39mtype(\u001b[33mString\u001b[39m(num1))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m   \u001b[36mawait\u001b[39m expect(sumInput1)\u001b[33m.\u001b[39mtoHaveValue(\u001b[33mString\u001b[39m(num1))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   \u001b[36mawait\u001b[39m sumInput2\u001b[33m.\u001b[39mtype(\u001b[33mString\u001b[39m(num2))\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36mawait\u001b[39m expect(sumInput2)\u001b[33m.\u001b[39mtoHaveValue(\u001b[33mString\u001b[39m(num2))\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts:30:27\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T15:14:18.502Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Sum\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Sum\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Sum\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Sum\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts",
+                    "column": 27,
+                    "line": 30
+                  }
+                }
+              ],
+              "status": "unexpected"
             }
           ],
           "id": "e776a7fc52a70022bea4-422ac338c4f970670813",
@@ -187,10 +222,10 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7331,
+                  "duration": 10911,
                   "errors": [],
                   "stdout": [
                     {
@@ -199,23 +234,23 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:14:00.213Z",
+                  "startTime": "2026-01-30T15:14:43.407Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert\\trace.zip"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert\\trace.zip"
                     }
                   ]
                 }
@@ -241,10 +276,10 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5691,
+                  "duration": 9917,
                   "errors": [],
                   "stdout": [
                     {
@@ -253,23 +288,23 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:14:07.631Z",
+                  "startTime": "2026-01-30T15:14:57.286Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-message\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert-message\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-message\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert-message\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-message\\trace.zip"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert-message\\trace.zip"
                     }
                   ]
                 }
@@ -295,10 +330,10 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5839,
+                  "duration": 10416,
                   "errors": [],
                   "stdout": [
                     {
@@ -307,23 +342,23 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:14:13.412Z",
+                  "startTime": "2026-01-30T15:15:07.656Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-Input\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert-Input\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-Input\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert-Input\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-Input\\trace.zip"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Alert-Input\\trace.zip"
                     }
                   ]
                 }
@@ -349,35 +384,35 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 13472,
+                  "duration": 28816,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No of frames 22\n"
+                      "text": "No of frames 19\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:14:19.332Z",
+                  "startTime": "2026-01-30T15:15:18.461Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Frames\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Frames\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Frames\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Frames\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Frames\\trace.zip"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Frames\\trace.zip"
                     }
                   ]
                 }
@@ -392,7 +427,7 @@
         },
         {
           "title": "Download and Upload",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -403,43 +438,57 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14479,
-                  "errors": [],
-                  "stdout": [
+                  "status": "timedOut",
+                  "duration": 34703,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
                     {
-                      "text": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\playwright-artifacts-nCu7C7\\bd140b11-238e-46a0-b60f-5824215a52cf\n"
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                     },
                     {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
+                      "location": {
+                        "file": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts",
+                        "column": 33,
+                        "line": 104
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#create')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"create\" type=\"button\" class=\"btn btn-dark selenium_btn\">Generate File</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"create\" type=\"button\" disabled=\"disabled\" class=\"btn btn-dark selenium_btn\">Generate File</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtype(\u001b[32m\"#textbox\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Hola omar esto es una prueba\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#create\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m   \u001b[36mconst\u001b[39m downloadArr \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 107 |\u001b[39m     page\u001b[33m.\u001b[39mwaitForEvent(\u001b[32m\"download\"\u001b[39m)\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\tests\\Demo.test.ts:104:33\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-30T08:14:33.101Z",
+                  "startTime": "2026-01-30T15:15:48.650Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\test-finished-1.png"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\video.webm"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\trace.zip"
+                      "path": "C:\\Users\\ocuarenta\\Desktop\\PlaywrightGit\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "e776a7fc52a70022bea4-a8d62e75afaee39e8da3",
@@ -452,11 +501,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T06:29:59.906Z",
-    "duration": 16880.254000000656,
-    "expected": 1,
+    "startTime": "2026-01-30T15:13:48.506Z",
+    "duration": 161539.918,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 2,
     "flaky": 0
   }
 }

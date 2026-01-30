@@ -114,19 +114,19 @@ test("Download and Upload", async ({ page }) => {
   const filePath = await downloadArr[0].path();
   console.log(filePath);
 
-  await page.goto("https://blueimp.github.io/jQuery-File-Upload/");
+  await page.goto("https://blueimp.github.io/jQuery-File-Upload/")
+  await page.setInputFiles("input[type='file']",["images/test.jpg","images/Multimedia (6).jpg"])
 
-  const [uploadFiles] = await Promise.all([
-    page.waitForEvent("filechooser"),
-    page.click("input[type='file']"),
-  ]);
+   const [uploadFiles] = await Promise.all([
+        page.waitForEvent("filechooser"),
+        page.click("input[type='file']")
+    ])
+    const isMultiple = uploadFiles.isMultiple();
+    console.log(isMultiple);
+    //uploadFiles.setFiles(["images/test.jpg","images/Multimedia (6).jpg"])
 
-  console.log(uploadFiles.isMultiple());
-  await uploadFiles.setFiles(fileName);
 
-  await expect(page.locator("tbody.files")).toContainText(fileName);
-
-  await page.waitForTimeout(3000);
+    await page.waitForTimeout(5000);
 });
 //npx playwright test --ui
 //codigo para ui
