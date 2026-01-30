@@ -55,10 +55,7 @@ test.only("Calendar demo using moment", async ({ page }) => {
 
     await selectDate(15, "September 2026");
 
-
     await page.waitForTimeout(3000)
-
-
 
     async function selectDate(date: number, dateToSelect: string) {
         

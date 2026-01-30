@@ -2,7 +2,7 @@ import { PlaywrightTestConfig } from '@playwright/test';
 
 
 const config: PlaywrightTestConfig={
-  //testMatch:["tests/uploadDownload.test.ts"],
+  testMatch:["tests/Demo.test.ts"],
   use:{
     baseURL:"https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,

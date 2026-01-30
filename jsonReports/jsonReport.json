@@ -50,7 +50,7 @@
         "testDir": "C:/Users/Usuario/Downloads/PlayWright/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "tests/Demo.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,20 +58,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Apiresponse\\apiresponse.test.ts",
-      "file": "Apiresponse/apiresponse.test.ts",
+      "title": "tests\\Demo.test.ts",
+      "file": "tests/Demo.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Read API response",
+          "title": "Interctions with inputs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -83,30 +83,41 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14087,
+                  "duration": 5882,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 4f 6d 61 72 43 34 30 22 2c 0a 20 20 22 69 64 22 3a 20 35 30 30 30 31 35 39 33 2c 0a 20 20 22 6e 6f 64 65 5f ... 1267 more bytes>\n"
+                      "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering data \n"
+                    },
+                    {
+                      "text": "After entering data Hi Omar\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T06:30:01.974Z",
+                  "startTime": "2026-01-30T08:13:47.319Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\test-finished-1.png"
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\Apiresponse-apiresponse-Read-API-response\\video.webm"
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Interctions-with-inputs\\trace.zip"
                     }
                   ]
                 }
@@ -114,9 +125,336 @@
               "status": "expected"
             }
           ],
-          "id": "c189cee76da494ef2ae4-a02f4b8d9706899d6cb6",
-          "file": "Apiresponse/apiresponse.test.ts",
+          "id": "e776a7fc52a70022bea4-22db5a5984aed53800de",
+          "file": "tests/Demo.test.ts",
           "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Sum",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6369,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "579\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T08:13:53.665Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Sum\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Sum\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Sum\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-422ac338c4f970670813",
+          "file": "tests/Demo.test.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "Alert",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7331,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "I am an alert box!\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T08:14:00.213Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-3582f5d95a426662512f",
+          "file": "tests/Demo.test.ts",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "Alert message",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5691,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "I am a confirm alert\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T08:14:07.631Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-message\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-message\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-message\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-2a54261dbcda5e5865ff",
+          "file": "tests/Demo.test.ts",
+          "line": 56,
+          "column": 5
+        },
+        {
+          "title": "Alert Input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5839,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "change me\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T08:14:13.412Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-Input\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-Input\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Alert-Input\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-b12e15b18d5cd51a17a4",
+          "file": "tests/Demo.test.ts",
+          "line": 69,
+          "column": 5
+        },
+        {
+          "title": "Frames",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13472,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No of frames 22\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T08:14:19.332Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Frames\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Frames\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Frames\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-e22309a8ee8beee123fa",
+          "file": "tests/Demo.test.ts",
+          "line": 82,
+          "column": 5
+        },
+        {
+          "title": "Download and Upload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14479,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\playwright-artifacts-nCu7C7\\bd140b11-238e-46a0-b60f-5824215a52cf\n"
+                    },
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-30T08:14:33.101Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Usuario\\Downloads\\PlayWright\\Playwright\\test-results\\tests-Demo-Download-and-Upload\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e776a7fc52a70022bea4-a8d62e75afaee39e8da3",
+          "file": "tests/Demo.test.ts",
+          "line": 100,
           "column": 5
         }
       ]
@@ -124,9 +462,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T06:29:59.906Z",
-    "duration": 16880.254000000656,
-    "expected": 1,
+    "startTime": "2026-01-30T08:13:45.851Z",
+    "duration": 62165.67799999999,
+    "expected": 7,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
