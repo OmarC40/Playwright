@@ -65,7 +65,7 @@ class Loginpage{
 export class Loginpage{
   constructor(page){
     this.page=page
-    this.inputname=page.locato('')
+    this.inputname=page.locator('')
     this.inputpassword=page.getByText('')
     this.inpuusername=page.getByLabel('')
     this.inputemail=page.getByPlaceholder('')
